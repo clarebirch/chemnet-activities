@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Assessing the Assessments: Landing page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<style>
+body, html {
+height: 100%;
+font-family: "Open Sans", sans-serif;
+}
+.bgimg {
+background-position: center;
+background-size:
+background-image: url("https://cdn.pixabay.com/photo/2017/08/01/18/29/background-2567158_1280.jpg");
+min-height: 75%;
+}
+.menu {
+display: none;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+
+<body>
+
+<h3>Activity 3: Classifying learning outcomes by knowledge dimension.</h3>
+				<p><i>To clarify what we’ve learnt about Bloom’s Revised Taxonomy, classify each of the following as Factual (F), Conceptual (C), Procedural (P), or Metacognitive (M).</i></p>
+				<form id="activity-3-form" action="/activity3.php">
+					<table style="width:100%;margin-left:auto;margin-right:auto;">
+						<tr>
+							<th>Learning outcome</th>
+							<td style="font-size:12pt">F</td>
+							<td style="font-size:12pt">C</td>
+							<td style="font-size:12pt">P</td>
+							<td style="font-size:12pt">M</td>
+						</tr>
+						<tr>
+							<td>Knowledge of research methods relevant to the sciences</td>
+							<td><label class="container"><input type="radio" name="act3_q1" id="act3_q1" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q1" id="act3_q1" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q1" id="act3_q1" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q1" id="act3_q1" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge of genetic models (e.g. DNA)</td>
+							<td><label class="container"><input type="radio" name="act3_q2" id="act3_q2" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q2" id="act3_q2" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q2" id="act3_q2" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q2" id="act3_q2" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge of various mnemonics to aid memory</td>
+							<td><label class="container"><input type="radio" name="act3_q3" id="act3_q3" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q3" id="act3_q3" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q3" id="act3_q3" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q3" id="act3_q3" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr></tr><tr>
+							<td>Knowledge of the first 20 chemical elements</td>
+							<td><label class="container"><input type="radio" name="act3_q4" id="act3_q4" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q4" id="act3_q4" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q4" id="act3_q4" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q4" id="act3_q4" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge of the fundamental laws of physics</td>
+							<td><label class="container"><input type="radio" name="act3_q5" id="act3_q5" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q5" id="act3_q5" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q5" id="act3_q5" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q5" id="act3_q5" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge that a ‘primary source’ may be more difficult to understand than a general textbook</td>
+							<td><label class="container"><input type="radio" name="act3_q6" id="act3_q6" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q6" id="act3_q6" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q6" id="act3_q6" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q6" id="act3_q6" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge of chemical constants (e.g. Planck’s constant, Avogadro’s number, etc.)</td>
+							<td><label class="container"><input type="radio" name="act3_q7" id="act3_q7" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q7" id="act3_q7" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q7" id="act3_q7" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q7" id="act3_q7" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge of the criteria for determining which statistical procedure to use with data from an experiment</td>
+							<td><label class="container"><input type="radio" name="act3_q8" id="act3_q8" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q8" id="act3_q8" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q8" id="act3_q8" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q8" id="act3_q8" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge of the different periods of geologic time</td>
+							<td><label class="container"><input type="radio" name="act3_q9" id="act3_q9" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q9" id="act3_q9" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q9" id="act3_q9" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q9" id="act3_q9" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td>Knowledge of one’s capabilities to perform a particular task that is accurate</td>
+							<td><label class="container"><input type="radio" name="act3_q10" id="act3_q10" value="F" checked="checked"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q10" id="act3_q10" value="C"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q10" id="act3_q10" value="P"><span class="checkmark"></span></label></td>
+							<td><label class="container"><input type="radio" name="act3_q10" id="act3_q10" value="M"><span class="checkmark"></span></label></td>
+						</tr>
+					</table>
+					<input type="submit" id="submit-activity-3">
+						</form>
+</body>
