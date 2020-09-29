@@ -41,9 +41,9 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1eKwB8lNfsVdGB_BOfa7t4z1ZW
       },
       scale: {
         ticks: {
-          max: 10,
+          max: 3,
           min: 0,
-          stepSize: 2}
+          stepSize: 1}
       },
       legend: {
         position: 'bottom'
